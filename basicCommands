@@ -1,0 +1,89 @@
+### 🐧 **Tabela de Comandos Linux**
+
+| **Comando**                  | **Descrição**                                                                 |
+|-----------------------------|------------------------------------------------------------------------------|
+| `ls`                        | Lista os itens do diretório atual                                            |
+| `ls -a`                     | Lista todos os arquivos, incluindo ocultos                                  |
+| `ls > arquivo.txt`          | Redireciona a saída do `ls` para um arquivo                                 |
+| `ls >> arquivo.txt`         | Adiciona a saída do `ls` ao final do arquivo                                |
+| `cd [pasta]`                | Acessa uma pasta específica                                                  |
+| `cd /`                      | Vai para a raiz do sistema                                                   |
+| `pwd`                       | Exibe o caminho completo do diretório atual                                 |
+| `mkdir [nome]`              | Cria um novo diretório                                                       |
+| `touch [arquivo]`           | Cria um arquivo vazio                                                        |
+| `cat [arquivo]`             | Exibe o conteúdo de um arquivo                                               |
+| `nano [arquivo]`            | Abre o editor de texto Nano                                                  |
+| `vim [arquivo]`             | Abre o editor de texto Vim                                                   |
+| `echo "mensagem"`           | Exibe uma mensagem no terminal                                               |
+| `echo "mensagem" >> arquivo.txt` | Adiciona a mensagem ao final do arquivo, sem sobrescrever               |
+
+---
+
+### **Permissões e Superusuário**
+
+| **Comando**                  | **Descrição**                                                                 |
+|-----------------------------|------------------------------------------------------------------------------|
+| `sudo [comando]`            | Executa o comando como superusuário                                          |
+| `sudo -i`                   | Inicia uma sessão como superusuário                                          |
+
+---
+
+### 📦 **Gerenciamento de Pacotes (APT)**
+
+| **Comando**                  | **Descrição**                                                                 |
+|-----------------------------|------------------------------------------------------------------------------|
+| `sudo apt update`           | Atualiza a lista de pacotes disponíveis                                      |
+| `sudo apt upgrade`          | Instala atualizações dos pacotes                                             |
+| `sudo apt install [pacote]` | Instala o pacote especificado                                                |
+| `sudo apt remove [pacote]`  | Remove o pacote especificado                                                 |
+
+---
+
+### 🗑️ **Remoção de Arquivos e Pastas**
+
+| **Comando**                  | **Descrição**                                                                 |
+|-----------------------------|------------------------------------------------------------------------------|
+| `rm [arquivo]`              | Remove arquivos                                                              |
+| `rm -i [arquivo]`           | Remove arquivos com confirmação                                              |
+| `rm -r [diretório]`         | Remove diretórios e seus conteúdos                                           |
+| `rmdir [diretório]`         | Remove diretórios vazios                                                     |
+
+---
+
+### ⚙️ **Processos e Monitoramento**
+
+| **Comando**                  | **Descrição**                                                                 |
+|-----------------------------|------------------------------------------------------------------------------|
+| `ps aux`                    | Lista todos os processos com detalhes                                        |
+| `ps -u [usuário]`           | Lista processos de um usuário específico                                     |
+| `ps -p [PID]`               | Exibe informações de um processo específico                                  |
+| `ps -C [comando]`           | Filtra processos pelo nome do comando                                        |
+| `top`                       | Exibe processos em tempo real                                                |
+| `pstree`                    | Mostra a árvore de processos                                                 |
+| `grep [padrão]`             | Busca por padrões em arquivos ou saídas de comandos                         |
+
+---
+
+### 🔪 **Gerenciamento de Processos**
+
+| **Comando**                  | **Descrição**                                                                 |
+|-----------------------------|------------------------------------------------------------------------------|
+| `kill [PID]`                | Envia sinal de interrupção (SIGTERM)                                         |
+| `kill -9 [PID]`             | Envia sinal de encerramento forçado (SIGKILL)                                |
+| `kill -STOP [PID]`          | Pausa o processo (SIGSTOP)                                                   |
+| `kill -CONT [PID]`          | Retoma o processo pausado (SIGCONT)                                          |
+| `pkill [nome]`              | Envia sinal para processos com base no nome                                  |
+| `killall [nome]`            | Envia sinal para todos os processos com o nome especificado                  |
+
+---
+
+### 📚 **Outros Comandos Úteis**
+
+| **Comando**                  | **Descrição**                                                                 |
+|-----------------------------|------------------------------------------------------------------------------|
+| `head [arquivo]`            | Exibe as primeiras linhas de um arquivo (padrão: 10 linhas)                  |
+| `sort [arquivo]`            | Ordena o conteúdo de um arquivo                                              |
+| `|` (pipe)                  | Redireciona a saída de um comando como entrada para outro                    |
+| `distrowatch.com`           | Site para acompanhar distribuições Linux                                     |
+
+---
