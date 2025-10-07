@@ -87,7 +87,15 @@
 | `distrowatch.com`           | Site para acompanhar distribuições Linux                                     |
 
 ---
+Sites para criar expressões de REGEX:
+REGEX101
+https://regex101.com/
 
+REGEXR
+https://regexr.com/
+
+REGEXPAL
+https://www.regexpal.com/
 
 /var/log/kern.log: contém mensagens do kernel, especialmente úteis para diagnosticar problemas relacionados a hardware ou drivers. Este log é essencial para identificar falhas em dispositivos ou conflitos de hardware.
 /var/log/dmesg: registra mensagens do kernel durante a inicialização do sistema. Ele ajuda a analisar o processo de boot e verificar se todos os dispositivos e módulos foram carregados corretamente.
@@ -99,3 +107,39 @@
 /var/log/messages: semelhante ao syslog, este arquivo está presente em algumas distribuições e registra mensagens gerais do sistema, incluindo logs de hardware e serviços.
 /var/log/cron: registra execuções de tarefas agendadas com o cron. Útil para verificar se scripts ou tarefas automatizadas estão sendo executados como esperado.
 /var/log/utmp, btmp, e wtmp: arquivos binários que rastreiam logins e logouts de usuários, além de tentativas de login inválidas. Eles podem ser lidos com comandos como last e lastb.
+
+
+
+
+
+Caracteres literais: correspondem exatamente aos caracteres no texto. Exemplo: abc corresponde à string "abc" no texto.
+
+Metacaracteres: caracteres especiais que possuem significados específicos.
+
+Os principais metacaracteres são:
+
+. (ponto): corresponde a qualquer caractere, exceto quebras de linha. Exemplo: a.b corresponde a "aab", "axb", "a1b", etc.
+^ (circunflexo): corresponde ao início de uma linha. Exemplo: ^abc corresponde a "abc" apenas no início de uma linha.
+$ (cifrão): corresponde ao final de uma linha. Exemplo: abc$ corresponde a "abc" apenas no final de uma linha.
+[]: conjunto de caracteres. Corresponde a qualquer caractere dentro dos colchetes. Exemplo: [aeiou] corresponde a qualquer vogal.
+[^]: negação dentro de colchetes. Corresponde a qualquer caractere que não esteja dentro dos colchetes. Exemplo: [^a-z] corresponde a qualquer caractere que não seja uma letra minúscula.
+*: corresponde a zero ou mais repetições do caractere anterior. Exemplo: a* corresponde a "", "a", "aa", "aaa", etc.
++: corresponde a uma ou mais repetições do caractere anterior. Exemplo: a+ corresponde a "a", "aa", "aaa", etc., mas não a "" (vazio).
+?: corresponde a zero ou uma repetição do caractere anterior. Exemplo: a? corresponde a "" ou "a".
+{n,m}: corresponde entre n e m repetições do caractere anterior. Exemplo: a{2,4} corresponde a "aa", "aaa" ou "aaaa".
+|: alternativa. Corresponde a qualquer um dos padrões à esquerda ou à direita do |. Exemplo: cat|dog corresponde a "cat" ou "dog".
+(): usado para agrupar partes de um padrão ou criar grupos de captura. Exemplo: A expressão regular fail(ed)? busca tanto a palavra "fail" quanto "failed", sendo o "ed" opcional graças ao uso dos parênteses para agrupar e do ponto de interrogação ? para tornar essa parte do padrão opcional.
+Classes de caracteres:
+
+\d: corresponde a qualquer dígito (equivalente a [0-9]).
+\w: corresponde a qualquer caractere alfanumérico (letras e números) e o sublinhado (equivalente a [a-zA-Z0-9_]).
+\s: corresponde a qualquer caractere de espaço em branco (como espaço, tabulação e nova linha).
+\D: corresponde a qualquer caractere que não seja um dígito.
+\W: corresponde a qualquer caractere que não seja alfanumérico ou sublinhado.
+\S: corresponde a qualquer caractere que não seja espaço em branco.
+Expressões regulares estendidas vs. básicas
+Ainda podemos classificar as expressões em dois tipos, são eles:
+
+Expressões regulares básicas: são mais simples e algumas metacaracteres (como ?, +, {}) têm que ser escapados com uma barra invertida (\).
+
+Expressões regulares estendidas: oferecem mais funcionalidades, como não precisar escapar os caracteres ?, +, {}, e |.
