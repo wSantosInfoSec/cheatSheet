@@ -87,3 +87,15 @@
 | `distrowatch.com`           | Site para acompanhar distribuições Linux                                     |
 
 ---
+
+
+/var/log/kern.log: contém mensagens do kernel, especialmente úteis para diagnosticar problemas relacionados a hardware ou drivers. Este log é essencial para identificar falhas em dispositivos ou conflitos de hardware.
+/var/log/dmesg: registra mensagens do kernel durante a inicialização do sistema. Ele ajuda a analisar o processo de boot e verificar se todos os dispositivos e módulos foram carregados corretamente.
+/var/log/boot.log: detalha os eventos do processo de inicialização do sistema, incluindo a execução de serviços e scripts de inicialização. Útil para depurar problemas que impedem o sistema de iniciar corretamente.
+/var/log/faillog: armazena tentativas de login falhas. É especialmente relevante para monitorar possíveis ataques de força bruta ou atividades suspeitas.
+/var/log/lastlog: contém informações sobre o último login de cada usuário do sistema. Ele pode ser consultado com o comando lastlog para verificar inícios de sessão.
+/var/log/apt/: uma pasta que contém logs relacionados ao gerenciador de pacotes APT. Os arquivos, como history.log e term.log, registram atualizações, instalações e remoções de pacotes, permitindo rastrear alterações no sistema.
+/var/log/mail.log e /var/log/mail.err: usados em servidores de e-mail, registram atividades relacionadas ao envio e recebimento de mensagens e possíveis erros.
+/var/log/messages: semelhante ao syslog, este arquivo está presente em algumas distribuições e registra mensagens gerais do sistema, incluindo logs de hardware e serviços.
+/var/log/cron: registra execuções de tarefas agendadas com o cron. Útil para verificar se scripts ou tarefas automatizadas estão sendo executados como esperado.
+/var/log/utmp, btmp, e wtmp: arquivos binários que rastreiam logins e logouts de usuários, além de tentativas de login inválidas. Eles podem ser lidos com comandos como last e lastb.
